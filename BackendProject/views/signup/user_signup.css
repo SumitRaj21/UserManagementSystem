@@ -1,0 +1,102 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background with gradient */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Glassmorphism container */
+#main {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 350px;
+    text-align: center;
+    color: white;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Input fields */
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button styles */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Login link */
+div a {
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+div a:hover {
+    text-decoration: underline;
+    color: #ffd633;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    #main {
+        width: 90%;
+        padding: 25px;
+    }
+}

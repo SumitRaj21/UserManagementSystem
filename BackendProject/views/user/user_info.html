@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="user_info.css">
+</head>
+<body>
+    <div id="user-details">
+        <h2>User Information</h2>
+        <p><strong>Name:</strong> <span id="name">John Doe</span></p>
+        <p><strong>Email:</strong> <span id="email">johndoe@example.com</span></p>
+        <p><strong>Phone Number:</strong> <span id="phone">123-456-7890</span></p>
+        <p><strong>Gender:</strong> <span id="gender">Male</span></p>
+        <p><strong>Address:</strong> <span id="address">123 Street, City</span></p>
+        <p><strong>Profession:</strong> <span id="profession">Software Developer</span></p>
+        <button onclick="updateUser()">Edit</button>
+    </div>
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="user_info.js"></script>
+</html>
